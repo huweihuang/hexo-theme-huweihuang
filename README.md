@@ -4,7 +4,7 @@
 
 Hu Weihuang Blog : [www.huweihuang.com](http://www.huweihuang.com/)
 
-![Theme HuWeihuang](/img/article/Theme_HuWeihuang.png)
+![Theme_HuWeihuang](source\img\article\Theme_HuWeihuang.png)
 
 # Install Hexo
 
@@ -80,7 +80,7 @@ You can decide to show post tags or not.
 ```yml
 home_posts_tag: true
 ```
-![home_posts_tag-true](/img/article/tag.png)
+ ![tag](source\img\article\tag.png)
 ### Markdown render
 My markdown render engine plugin is [hexo-renderer-markdown-it](https://github.com/celsomiranda/hexo-renderer-markdown-it).
 ```yml
