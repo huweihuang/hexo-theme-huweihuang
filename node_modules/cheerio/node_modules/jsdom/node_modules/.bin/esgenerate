@@ -1,0 +1,15 @@
+#!/bin/sh
+basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+
+case `uname` in
+    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
+esac
+
+if [ -x "$basedir/node" ]; then
+  "$basedir/node"  "$basedir/../../../_escodegen@1.9.0@escodegen/bin/esgenerate.js" "$@"
+  ret=$?
+else 
+  node  "$basedir/../../../_escodegen@1.9.0@escodegen/bin/esgenerate.js" "$@"
+  ret=$?
+fi
+exit $ret
