@@ -4,7 +4,7 @@
 
 Hu Weihuang Blog : [www.huweihuang.com](http://www.huweihuang.com/)
 
-![Theme_HuWeihuang](http://ozilwgpje.bkt.clouddn.com/huweihuang_blog.png)
+![Theme_HuWeihuang](http://res.cloudinary.com/dqxtn0ick/image/upload/v1512823779/article/blog/huweihuang_blog.png)
 
 # Install Hexo
 
