@@ -18,12 +18,14 @@ archive_generator:
   yearly: true
   monthly: true
   daily: false
+  order_by: -date
 ```
 
 - **per_page**: Posts displayed per page. (0 = disable pagination)
 - **yearly**: Generate yearly archive.
 - **monthly**: Generate monthly archive.
 - **daily**: Generate daily archive.
+- **order_by**: Posts order. (Order by date descending by default)
 
 ## License
 

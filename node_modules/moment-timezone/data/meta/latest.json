@@ -1584,7 +1584,7 @@
 			"name": "South Sudan",
 			"abbr": "SS",
 			"zones": [
-				"Africa/Khartoum"
+				"Africa/Juba"
 			]
 		},
 		"ST": {
@@ -4525,8 +4525,7 @@
 			"lat": 15.6,
 			"long": 32.5333,
 			"countries": [
-				"SD",
-				"SS"
+				"SD"
 			],
 			"comments": ""
 		},
@@ -4554,6 +4553,15 @@
 			"long": -54.8333,
 			"countries": [
 				"SR"
+			],
+			"comments": ""
+		},
+		"Africa/Juba": {
+			"name": "Africa/Juba",
+			"lat": 4.85,
+			"long": 31.6167,
+			"countries": [
+				"SS"
 			],
 			"comments": ""
 		},

@@ -3,7 +3,7 @@ title: "[Hexo] Theme HuWeihuang"
 catalog: true
 date: 2017-09-18 10:51:24
 subtitle: "This is hexo theme Demo."
-header-img: "/img/article_header_img/article_header.png"
+header-img: "/img/article_header/article_header.png"
 tags:
 - Hexo
 catagories:

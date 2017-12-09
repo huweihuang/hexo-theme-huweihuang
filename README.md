@@ -4,7 +4,7 @@
 
 Hu Weihuang Blog : [www.huweihuang.com](http://www.huweihuang.com/)
 
-![Theme_HuWeihuang](https://raw.githubusercontent.com/huweihuang/hexo-theme-huweihuang/master/source/img/article/Theme_HuWeihuang.png)
+![Theme_HuWeihuang](http://ozilwgpje.bkt.clouddn.com/huweihuang_blog.png)
 
 # Install Hexo
 
@@ -28,7 +28,6 @@ npm install hexo-cli -g
 
 ## Init
 
----
 ```bash
 git clone https://github.com/huweihuang/hexo-theme-huweihuang.git ./hexo-huweihuang
 cd hexo-huweihuang
@@ -36,7 +35,6 @@ npm install
 ```
 
 ## Modify
----
 Modify `_config.yml` file with your own info.
 Especially the section:
 ### Deployment
@@ -106,7 +104,6 @@ async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
 ```
 
 ## Hexo Basics
----
 Some hexo command:
 ```bash
 hexo new post "<post name>" # you can change post to another layout if you want

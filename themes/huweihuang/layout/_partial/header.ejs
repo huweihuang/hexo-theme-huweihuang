@@ -3,13 +3,13 @@
 <style type="text/css">
     header.intro-header{
         <% if (is_home()) { %>
-            background-image: url('<%= config.root + config["header-img"] %>') 
+            background-image: url('<%= config["header-img"] %>') 
             /*config*/
         <%} else if (is_post()){%>
-            background-image: url('<%= page["header-img"] %>')
+            background-image: url('<%= page["header-img"] || config["article-img"] %>')
             /*post*/
         <%} else {%>
-            background-image: url('<%= config.root + page["header-img"] %>')
+            background-image: url('<%= page["header-img"] || config["archives-img"] %>')
             /*page*/
         <%} %>
     }

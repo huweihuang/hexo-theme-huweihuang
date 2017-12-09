@@ -32,10 +32,10 @@ function highlightUtil(str, options) {
   for (var i = 0, len = lines.length; i < len; i++) {
     line = lines[i];
     if (tab) line = replaceTabs(line, tab);
-    numbers += '<div class="line">' + (firstLine + i) + '</div>';
-    content += '<div class="line';
+    numbers += '<span class="line">' + (firstLine + i) + '</span><br>';
+    content += '<span class="line';
     content += (mark.indexOf(firstLine + i) !== -1) ? ' marked' : '';
-    content += '">' + line + '</div>';
+    content += '">' + line + '</span><br>';
   }
 
   result += '<figure class="highlight' + (data.language ? ' ' + data.language : '') + '">';

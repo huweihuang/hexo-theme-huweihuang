@@ -7,4 +7,3 @@ coverage/
 gulpfile.js
 .idea/
 appveyor.yml
-highlight_alias.json

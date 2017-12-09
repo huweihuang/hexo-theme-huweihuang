@@ -1,6 +1,6 @@
 'use strict';
 
-var bunyan = require('bunyan');
+var bunyan = require('hexo-bunyan');
 var chalk = require('chalk');
 var Writable = require('stream').Writable;
 

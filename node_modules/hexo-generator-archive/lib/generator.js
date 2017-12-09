@@ -10,7 +10,7 @@ module.exports = function(locals) {
   var config = this.config;
   var archiveDir = config.archive_dir;
   var paginationDir = config.pagination_dir || 'page';
-  var allPosts = locals.posts.sort('-date');
+  var allPosts = locals.posts.sort(config.archive_generator.order_by || '-date');
   var perPage = config.archive_generator.per_page;
   var result = [];
 
