@@ -25,10 +25,10 @@ exports.heading = function (data) {
     var $title = $(this);
     var title = $title.text();
     var id = toc.slugify(title, options);
-    // $title.attr('id', id);
-    $title.children('a').remove();
-    $title.html( '<span id="' + id + '">' + $title.html() + '</span>' );
-    $title.removeAttr('id');
+    $title.attr('id', id);
+    // $title.children('a').remove();
+    // $title.html( '<span id="' + id + '">' + $title.html() + '</span>' );
+    // $title.removeAttr('id');
 
 
     if (options.anchor) {
