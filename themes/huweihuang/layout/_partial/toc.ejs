@@ -1,5 +1,12 @@
 <!-- Table of Contents -->
 <% if (page.catalog) { %>
+  <% if(!page.toc_nav_num){%>
+    <style>
+      span.toc-nav-number{
+        display: none
+      }
+    </style>
+  <% } %>
     <% if (is_post()){ %>
       <aside id="sidebar">
         <div id="toc" class="toc-article">
