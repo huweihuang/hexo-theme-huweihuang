@@ -193,6 +193,16 @@ markdown:
 # aplayer:
 #   meting: true
 
+# MeingJS support for Aplayer
+# reference: https://github.com/metowolf/MetingJS & https://github.com/MoePlayer/APlayer
+metingjs: true
+data-id: 2422784487
+data-server: netease  
+data-type: playlist
+data-fixed: false
+  # data-mini:
+  # data-autoplay:    
+
 ## Themes: https://hexo.io/themes/
 theme: huweihuang
 

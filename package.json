@@ -6,6 +6,7 @@
     "version": "3.4.3"
   },
   "dependencies": {
+    "aplayer": "^1.10.1",
     "hexo": "^3.2.0",
     "hexo-deployer-git": "^0.1.0",
     "hexo-generator-archive": "^0.1.4",
