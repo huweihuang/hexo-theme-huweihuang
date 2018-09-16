@@ -6,7 +6,7 @@
             background-image: url('<%= config["header-img"] %>') 
             /*config*/
         <%} else if (is_post()){%>
-            background-image: url('<%= page["header-img"] || config["article-img"] %>')
+            background-image: url('<%= page["header-img"] || config["article-img"]  %>')
             /*post*/
         <%} else {%>
             background-image: url('<%= page["header-img"] || config["archives-img"] %>')
