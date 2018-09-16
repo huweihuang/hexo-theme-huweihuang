@@ -192,4 +192,4 @@ deploy:
   type: git
   repository: https://github.com/huweihuang/hexo-theme-huweihuang
   branch: gh-pages
-  message: Change background images
+  message: Update CNAME
