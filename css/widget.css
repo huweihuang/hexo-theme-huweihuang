@@ -1,0 +1,47 @@
+.widget {
+  color: #bfbfbf;
+  background: transparent;
+}
+.widget a {
+  color: #bfbfbf;
+  text-decoration: none;
+}
+.widget a:hover {
+  color: #0085a1;
+  text-decoration: none;
+}
+.widget ul ul,
+.widget ol ul,
+.widget ul ol,
+.widget ol ol {
+  margin-left: 0 10px;
+ul
+  list-style: disc;
+}
+.widget ul ul ol,
+.widget ol ul ol,
+.widget ul ol ol,
+.widget ol ol ol {
+  list-style: decimal;
+}
+.category-list-count,
+.tag-list-count,
+.archive-list-count {
+  padding-left: 5px;
+  color: color-grey;
+  font-size: 0.85em;
+}
+.category-list-count:before,
+.tag-list-count:before,
+.archive-list-count:before {
+  content: "(";
+}
+.category-list-count:after,
+.tag-list-count:after,
+.archive-list-count:after {
+  content: ")";
+}
+#avatar_pic {
+  max-height: 200px;
+  max-width: 200px;
+}
