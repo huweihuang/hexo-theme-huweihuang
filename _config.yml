@@ -190,8 +190,8 @@ markdown:
 
 # hexo-tag-aplayer
 # reference: https://github.com/MoePlayer/hexo-tag-aplayer
- aplayer:
-   meting: true
+# aplayer:
+#   meting: true
 
 ## Themes: https://hexo.io/themes/
 theme: huweihuang
