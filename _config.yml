@@ -177,6 +177,22 @@ markdown:
   
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+
+# recommended-posts
+# reference: https://github.com/huiwang/hexo-recommended-posts
+# recommended_posts:
+#   server: https://api.truelaurel.com #后端推荐服务器地址
+#   timeoutInMillis: 10000 #服务时长，超过此时长，则使用离线推荐模式
+#   internalLinks: 3 #内部文章数量
+#   externalLinks: 0 #外部文章数量
+#   autoDisplay: true, #自动在文章底部显示推荐文章
+#   titleHtml: <h2>推荐文章<span style="font-size:0.45em; color:gray"></span></h2> #自定义标题
+
+# hexo-tag-aplayer
+# reference: https://github.com/MoePlayer/hexo-tag-aplayer
+ aplayer:
+   meting: true
+
 ## Themes: https://hexo.io/themes/
 theme: huweihuang
 
