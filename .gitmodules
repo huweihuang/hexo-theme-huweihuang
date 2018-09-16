@@ -1,0 +1,4 @@
+[submodule ".deploy_git"]
+    path = .deploy_git
+    url = https://github.com/huweihuang/hexo-theme-huweihuang.git
+    branch = gh-pages

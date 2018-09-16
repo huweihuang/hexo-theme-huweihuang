@@ -186,8 +186,10 @@ sitemap:
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
+# repository: https://github.com/huweihuang/xxxxxxx.github.io.git
+# branch: master
 deploy:
   type: git
-  repository: https://github.com/huweihuang/xxxxxxx.github.io.git
-  branch: master
+  repository: https://github.com/huweihuang/hexo-theme-huweihuang
+  branch: gh-pages
   message: Change background images
