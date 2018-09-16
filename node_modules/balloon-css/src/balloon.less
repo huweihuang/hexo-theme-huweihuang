@@ -1,0 +1,297 @@
+//
+// Variables
+// -----------------------------------------
+
+@balloon-bg:         fade(#111, 90%);
+@balloon-font-size:  12px;
+@balloon-arrow-size: 6px;
+
+
+//
+// Mixins
+// -----------------------------------------
+
+.mixin-svg-arrow(@width, @height, @degrees) {
+  @arrow-width: @width * 2;
+  @arrow-height: @height * 2;
+  @svg-arrow: ~'<svg xmlns="http://www.w3.org/2000/svg" width="@{arrow-width}" height="@{arrow-height}"><path fill="@{color}" transform="rotate(@{degrees})" d="M2.658,0.000 C-13.615,0.000 50.938,0.000 34.662,0.000 C28.662,0.000 23.035,12.002 18.660,12.002 C14.285,12.002 8.594,0.000 2.658,0.000 Z"/></svg>';
+  @-svg-code: escape(~'@{svg-arrow}');
+  background: url('data:image/svg+xml;charset=utf-8,@{-svg-code}') no-repeat;
+  background-size: 100% auto;
+  height: @height;
+  width: @width;
+}
+
+.svg-arrow(@color, @position) {
+  & when (@position = up) {
+    @width: @balloon-arrow-size * 3;
+    @height: @balloon-arrow-size;
+    @degrees: 0;
+    .mixin-svg-arrow(@width, @height, @degrees);
+  }
+  & when (@position = down) {
+    @width: @balloon-arrow-size * 3;
+    @height: @balloon-arrow-size;
+    @degrees: 180 18 6;
+    .mixin-svg-arrow(@width, @height, @degrees);
+  }
+  & when (@position = left) {
+    @width: @balloon-arrow-size;
+    @height: @balloon-arrow-size * 3;
+    @degrees: -90 18 18;
+    .mixin-svg-arrow(@width, @height, @degrees);
+  }
+  & when (@position = right) {
+    @width: @balloon-arrow-size;
+    @height: @balloon-arrow-size * 3;
+    @degrees: 90 6 6;
+    .mixin-svg-arrow(@width, @height, @degrees);
+  }
+}
+
+.transition(@args) {
+  -webkit-transition: @args;
+  transition: @args;
+}
+
+.transform (@val) {
+  -webkit-transform: @val;
+  -ms-transform: @val;
+  transform: @val;
+}
+
+.transform-origin(@val) {
+  -webkit-transform-origin: @val;
+  -ms-transform-origin: @val;
+  transform-origin: @val;
+}
+
+.opacity(@trans) {
+  @multiply: @trans * 100;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=@{multiply})";
+  filter: alpha(opacity=@multiply);
+  -khtml-opacity: @trans;
+  -moz-opacity: @trans;
+  opacity: @trans;
+}
+
+.base-effects() {
+  .opacity(0);
+  pointer-events: none;
+  .transition(all .18s ease-out .18s);
+}
+
+.no-effects() {
+  .transition(none);
+}
+
+.normalized-text() {
+  font-family: sans-serif !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  text-shadow: none !important;
+  font-size: @balloon-font-size !important;
+}
+
+
+//
+// Styles
+// -----------------------------------------
+
+// IE 11 button bugfix
+button[data-balloon] {
+  overflow: visible;
+}
+
+[data-balloon] {
+  position: relative; // alt. absolute or fixed
+
+  // Fixing iOS Safari event issue.
+  // More info at: https://goo.gl/w8JF4W
+  cursor: pointer;
+
+  &:before,
+  &:after {
+    .base-effects();
+    bottom: 100%;
+    left: 50%;
+    position: absolute;
+    z-index: 10;
+    .transform(translate(-50%, 10px));
+    .transform-origin(top);
+  }
+  &:after {
+    .normalized-text();
+    background: @balloon-bg;
+    border-radius: @balloon-font-size / 3;
+    color: #fff;
+    content: attr(data-balloon);
+    padding: .5em 1em;
+    white-space: nowrap;
+    margin-bottom: @balloon-arrow-size + 5;
+  }
+  &:before {
+    .svg-arrow(@balloon-bg, up);
+    content: "";
+    margin-bottom: @balloon-arrow-size - 1;
+  }
+  &:hover, &[data-balloon-visible] {
+    &:before,
+    &:after {
+      .opacity(1);
+      pointer-events: auto;
+      .transform(translate(-50%, 0));
+    }
+  }
+
+  &.font-awesome:after {
+    font-family: FontAwesome;
+  }
+
+  &[data-balloon-break] {
+    &:after {
+      white-space: pre;
+    }
+  }
+}
+
+[data-balloon-blunt] {
+  &:before,
+  &:after {
+    .no-effects();
+  }
+}
+
+[data-balloon-pos="down"] {
+  &:before,
+  &:after {
+    bottom: auto;
+    left: 50%;
+    top: 100%;
+    .transform(translate(-50%, -10px));
+  }
+  &:after {
+    margin-top: @balloon-arrow-size + 5;
+  }
+  &:before {
+    .svg-arrow(@balloon-bg, down);
+    margin-top: @balloon-arrow-size - 1;
+    margin-bottom: 0;
+  }
+  &:hover, &[data-balloon-visible] {
+    &:before,
+    &:after {
+      .transform(translate(-50%, 0));
+    }
+  }
+}
+
+[data-balloon-pos="down-left"] {
+  &:before,
+  &:after {
+    bottom: auto;
+    left: 0;
+    top: 100%;
+    .transform(translate(0, -10px));
+  }
+  &:after {
+    margin-top: @balloon-arrow-size + 5;
+  }
+  &:before {
+    .svg-arrow(@balloon-bg, down);
+    margin-top: @balloon-arrow-size - 1;
+    margin-bottom: 0;
+    left: 5px;
+  }
+  &:hover, &[data-balloon-visible] {
+    &:before,
+    &:after {
+      .transform(translate(0, 0));
+    }
+  }
+}
+
+[data-balloon-pos="down-right"] {
+  &:before,
+  &:after {
+    bottom: auto;
+    right: 0;
+    top: 100%;
+    .transform(translate(0, -10px));
+  }
+  &:after {
+    margin-top: @balloon-arrow-size + 5;
+  }
+  &:before {
+    .svg-arrow(@balloon-bg, down);
+    margin-top: @balloon-arrow-size - 1;
+    margin-bottom: 0;
+    right: 5px;
+  }
+  &:hover, &[data-balloon-visible] {
+    &:before,
+    &:after {
+      .transform(translate(0, 0));
+    }
+  }
+}
+
+[data-balloon-pos="left"] {
+  &:before,
+  &:after {
+    bottom: auto;
+    left: auto;
+    right: 100%;
+    top: 50%;
+    .transform(translate(10px, -50%));
+  }
+  &:after {
+    margin-right: @balloon-arrow-size + 5;
+  }
+  &:before {
+    .svg-arrow(@balloon-bg, left);
+    margin-right: @balloon-arrow-size - 1;
+    margin-bottom: 0;
+  }
+  &:hover, &[data-balloon-visible] {
+    &:before,
+    &:after {
+      .transform(translate(0, -50%));
+    }
+  }
+}
+
+[data-balloon-pos="right"] {
+  &:before,
+  &:after {
+    bottom: auto;
+    left: 100%;
+    top: 50%;
+    .transform(translate(-10px, -50%));
+  }
+  &:after {
+    margin-left: @balloon-arrow-size + 5;
+  }
+  &:before {
+    .svg-arrow(@balloon-bg, right);
+    margin-bottom: 0;
+    margin-left: @balloon-arrow-size - 1;
+  }
+  &:hover, &[data-balloon-visible] {
+    &:before,
+    &:after {
+      .transform(translate(0, -50%));
+    }
+  }
+}
+
+:after {
+  [data-balloon-length]&          { white-space: normal; }
+  [data-balloon-length="small"]&  { width: 80px; }
+  [data-balloon-length="medium"]& { width: 150px; }
+  [data-balloon-length="large"]&  { width: 260px; }
+  [data-balloon-length="xlarge"]& { width: 90vw;
+    @media screen and (min-width: 768px) { width: 380px; }
+  }
+  [data-balloon-length="fit"]&    { width: 100%; }
+}
