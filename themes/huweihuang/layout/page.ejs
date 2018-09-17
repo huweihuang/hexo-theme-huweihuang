@@ -58,6 +58,22 @@ layout: layout
             
                 <%- page.content || body %>
 
+                <br>
+
+                <!-- require APlayer -->
+                <% if(page.aplayer) { %>
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
+                    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js"></script>
+                
+                    <div class="aplayer"
+                        data-id="<%= config['data-id'] %>"
+                        data-server="<%= config['data-server'] %>"
+                        data-type="<%= config['data-type'] %>"
+                        data-fixed="<%= page.fixed %>" >
+                    </div>
+                <% } %>
+
                 <!-- 如果开启评论功能 -->
                 <% if(page.comments) { %>
                     <hr>
