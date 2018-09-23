@@ -17,7 +17,7 @@ catagories:
 
 Hu Weihuang Blog : [www.huweihuang.com](http://www.huweihuang.com/)
 
-![Theme HuWeihuang](/img/article/Theme_HuWeihuang.png)
+![Theme HuWeihuang](http://ozilwgpje.bkt.clouddn.com/blog.jpg)
 
 # Install Hexo
 
