@@ -10,7 +10,7 @@ Hu Weihuang Blog : [www.huweihuang.com](http://www.huweihuang.com/)
 
 **You can free to use this theme, but you need to keep the following copyright notice on the website.**
 
-<img src="https://res.cloudinary.com/dqxtn0ick/image/upload/v1537878474/header/copyright.png" width="55%">
+<img src="https://res.cloudinary.com/dqxtn0ick/image/upload/v1537879475/header/copyright.png" width="55%">
 
 # Install Hexo
 
