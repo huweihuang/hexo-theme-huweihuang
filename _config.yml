@@ -195,7 +195,7 @@ markdown:
 
 # MeingJS support for Aplayer
 # reference: https://github.com/metowolf/MetingJS & https://github.com/MoePlayer/APlayer
-metingjs: true
+metingjs: false
 data-id: 2423410161
 data-server: netease  
 data-type: playlist
