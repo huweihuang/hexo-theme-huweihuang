@@ -203,6 +203,13 @@ data-fixed: true
   # data-mini:
   # data-autoplay:    
 
+# Reward
+reward: false
+reward_comment: 赞赏一下
+wechatpay: wechatpay_url
+alipay: alipay_url
+
+
 ## Themes: https://hexo.io/themes/
 theme: huweihuang
 
