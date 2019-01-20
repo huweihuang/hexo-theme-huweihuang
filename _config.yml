@@ -22,7 +22,7 @@ permalink_defaults:
 
 # Site settings
 SEOTitle: 胡伟煌 | Blog
-email: huweihuang@foxmail.com
+email: e-mail_address
 description: ""
 keyword: ""
 header-img: /img/header_img/home.jpg
@@ -38,8 +38,8 @@ signature-img: img/signature/BeanTechSign-white.png
 # zhihu_username:     Demonbane
 github_username:    huweihuang
 # twitter_username:   Demonbane_x
-#facebook_username:  YenYuHsuan
-linkedin_username:  huweihuang
+# facebook_username:  xxx
+# linkedin_username:  xxx
 
 # Build settings
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
@@ -56,7 +56,7 @@ anchorjs: true                          # if you want to customize anchor. check
 
 # Analytics settings
 #Baidu Analytics
-ba_track_id: r45fhy7653897235wg5ye709d930f62e
+ba_track_id: xxx
 # Google Analytics
 ga_track_id: 'UA-XXXXXXXX-X'          # Format: UA-xxxxxx-xx
 ga_domain: yoursite
