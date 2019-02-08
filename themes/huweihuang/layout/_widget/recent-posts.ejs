@@ -1,5 +1,5 @@
 <% if (site.posts.length){ %>
-  <h5><%= __('RECENT POSTS') %></h3>
+  <h5><%= __('RECENT POSTS') %></h5>
   <div class="widget">
     <ul>
       <% site.posts.sort('date', -1).limit(5).each(function(post){ %>
