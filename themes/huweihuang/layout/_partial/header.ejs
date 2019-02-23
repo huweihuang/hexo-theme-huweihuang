@@ -35,6 +35,13 @@
                         </div>
                         <h1><%= page.title %></h1>
                         <h2 class="subheading"><%= page.subtitle || "" %></h2>
+
+                        <!--文章访问量统计-->
+                        <% if(config['busuanzi']) { %>
+                            <span id="busuanzi_container_page_pv">本文已被阅读过<span id="busuanzi_value_page_pv"></span>次</span>
+                        <% } %>
+                        <!--文章访问量统计-->
+
                         <span class="meta">
                             Posted by <%- page.author || config.author %> on
                             <%= page.date.format(config.date_format) %>
