@@ -6,7 +6,7 @@
 
 Hu Weihuang Blog : [www.huweihuang.com](http://www.huweihuang.com/)
 
-![Theme_HuWeihuang](http://ozilwgpje.bkt.clouddn.com/blog.jpg)
+![Theme_HuWeihuang](https://res.cloudinary.com/dqxtn0ick/image/upload/v1553666111/blog/blog.jpg)
 
 # Copyright Notice
 
