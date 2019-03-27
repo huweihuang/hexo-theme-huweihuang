@@ -32,6 +32,25 @@ signature: false #show signature
 signature-img: img/signature/BeanTechSign-white.png 
 
 
+
+# 设置nav排序
+nav_menu: [
+    {
+        title: "About",
+        href: "/about/"
+    },
+    {
+        title: "Archives",
+        href: "/archives/"
+    }
+    ,
+    {
+        title: "Tags",
+        href: "/tags/"
+    }
+]
+
+
 # SNS settings
 # RSS: false
 # weibo_username:     Demonbaneen
@@ -208,6 +227,11 @@ reward: false
 reward_comment: 赞赏一下
 wechatpay: wechatpay_url
 alipay: alipay_url
+
+
+# busuanzi
+busuanzi: true
+
 
 # Share
 # Reference: https://github.com/overtrue/share.js
