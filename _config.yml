@@ -32,6 +32,25 @@ signature: false #show signature
 signature-img: img/signature/BeanTechSign-white.png 
 
 
+
+# 设置nav排序
+nav_menu: [
+    {
+        title: "About",
+        href: "/about/"
+    },
+    {
+        title: "Archives",
+        href: "/archives/"
+    }
+    ,
+    {
+        title: "Tags",
+        href: "/tags/"
+    }
+]
+
+
 # SNS settings
 # RSS: false
 # weibo_username:     Demonbaneen
