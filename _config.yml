@@ -41,7 +41,7 @@ nav_menu: [
     },
     {
         title: "Archives",
-        href: "/archives/"
+        href: "/archive/"
     }
     ,
     {
