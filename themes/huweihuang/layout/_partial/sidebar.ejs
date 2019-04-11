@@ -6,7 +6,7 @@
     col-xs-12
     sidebar-container
 ">
-    <% theme.widgets.forEach(function(widget){ %>
+    <% if(theme.widgets)theme.widgets.forEach(function(widget){ %>
         <%- partial('_widget/' + widget) %>
         <hr>
     <% }) %>
