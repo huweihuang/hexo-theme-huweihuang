@@ -7,8 +7,11 @@ subtitle: "This is hexo theme Demo."
 header-img: "/img/article_header/article_header.png"
 tags:
 - Hexo
-catagories:
+- APP
+categories:
 - Hexo
+- website
+- newCat
 
 ---
 > This HuWeihuang theme created by [HuWeihuang](http://www.huweihuang.com/) modified from the original Porter [YuHsuan](https://github.com/YenYuHsuan/hexo-theme-beantech)

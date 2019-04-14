@@ -3,27 +3,27 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 胡伟煌 
-subtitle: 个人博客
-author: 胡伟煌
+title: 日月明 
+subtitle: 编程改变世界
+author: JunMing
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://www.huweihuang.com/       # Note: don't forget to modify the CNAME file to your url
+url: http://www.sumoon.com/       # Note: don't forget to modify the CNAME file to your url
 root: /
 #permalink: :year/:month/:day/:title/
 permalink: :category/:title/
 permalink_defaults:
-  lang: en
+  lang: zh-CN
 
 #Custom Setting Start
 
 # Site settings
-SEOTitle: 胡伟煌 | Blog
+SEOTitle: APP|网站|公众号|一网打尽
 email: e-mail_address
-description: ""
+description: "专注于APP开发，网站开发，公众号开发，以及三者的整合开发"
 keyword: ""
 header-img: /img/header_img/home.jpg
 article-img: /img/article_header/article_bg.jpg
@@ -36,7 +36,7 @@ signature-img: img/signature/BeanTechSign-white.png
 # RSS: false
 # weibo_username:     Demonbaneen
 # zhihu_username:     Demonbane
-github_username:    huweihuang
+github_username:    kinggozhang
 # twitter_username:   Demonbane_x
 # facebook_username:  xxx
 # linkedin_username:  xxx
@@ -64,15 +64,15 @@ ga_domain: yoursite
 
 # Sidebar settings
 sidebar: true                       # whether or not using Sidebar.
-sidebar-about-description: "Stay hungry,Stay foolish"
-sidebar-avatar: /img/avatar/ironman.png      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "Innovation is KING!"
+sidebar-avatar: /img/avatar/logo.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 widgets:
 - featured-tags
 - short-about
 - recent-posts
 - friends-blog
 - archive
-#- category
+- category
 
 # widget behavior
 ## Archive
@@ -88,18 +88,7 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 
 ## Friends
 friends: [
-    {
-        title: "CSDN Blog 胡伟煌",
-        href: "http://blog.csdn.net/huwh_"
-    },
-    {
-        title: "DockOne 胡伟煌",
-        href: "http://dockone.io/people/胡伟煌"
-    },
-    {
-        title: "阿里云栖社区 胡伟煌",
-        href: "https://yq.aliyun.com/u/huweihuang"
-    }
+
 ]
 
 
@@ -214,7 +203,7 @@ alipay: alipay_url
 share: true
 
 ## Themes: https://hexo.io/themes/
-theme: huweihuang
+theme: sumoon
 
 #sitemap
 sitemap:
@@ -226,6 +215,6 @@ sitemap:
 # branch: master
 deploy:
   type: git
-  repository: https://github.com/huweihuang/hexo-theme-huweihuang
-  branch: gh-pages
-  message: Update CNAME
+  repository: https://github.com/kinggozhang/hexo_theme_sumoon
+  branch: master
+  message: hexo theme sumoon update
