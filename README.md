@@ -1,9 +1,9 @@
-> This Sumoon theme created by [HuWeihuang](http://www.sumoon.com/) foked from huweihuang (https://github.com/huweihuang/hexo-theme-huweihuang)
+> This Sumoon theme created by [kinggozhang](http://www.sumoon.com/) foked from huweihuang (https://github.com/huweihuang/hexo-theme-huweihuang)
 > 
 
 # Live Demo
 
-Hu Weihuang Blog : [www.sumoon.com](http://www.sumoon.com/)
+My Blog : [www.sumoon.com](http://www.sumoon.com/)
 
 
 # Copyright Notice
@@ -115,5 +115,5 @@ hexo deploy # hexo will push the static files automatically into the specific br
 ```
 
 # Have fun ^_^ 
-Please <a class="github-button" href="https://github.com/huweihuang/hexo-theme-huweihuang" data-icon="octicon-star" aria-label="Star huweihuang/hexo-theme-huweihuang on GitHub">Star</a> this Project if you like it! <a class="github-button" href="https://github.com/huweihuang" aria-label="Follow @huweihuang on GitHub">Follow</a> would also be appreciated!
+Please <a class="github-button" href="https://github.com/kinggozhang/hexo-theme-sumoon" data-icon="octicon-star" aria-label="Star kinggozhang/hexo-theme-sumoon on GitHub">Star</a> this Project if you like it! <a class="github-button" href="https://github.com/kinggozhang" aria-label="Follow @kinggozhang on GitHub">Follow</a> would also be appreciated!
 Peace!
