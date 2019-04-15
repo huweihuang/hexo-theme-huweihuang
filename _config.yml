@@ -21,9 +21,9 @@ permalink_defaults:
 #Custom Setting Start
 
 # Site settings
-SEOTitle: APP|网站|公众号|一网打尽
+SEOTitle: 编程|HEXO|NODEJS|C++|时评
 email: e-mail_address
-description: "专注于APP开发，网站开发，公众号开发，以及三者的整合开发"
+description: "字节艺术家的日常"
 keyword: ""
 header-img: /img/header_img/home.jpg
 article-img: /img/article_header/article_bg.jpg

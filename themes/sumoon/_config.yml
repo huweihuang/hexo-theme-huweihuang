@@ -6,4 +6,4 @@
 # night yilia - https://github.com/litten/hexo-theme-yilia
 highlight_theme: night eighties
 slideshow: false
-ribban_bg: false
+ribban_bg: true

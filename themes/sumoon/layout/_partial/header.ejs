@@ -137,7 +137,10 @@
     function i(){
 	    var hder = document.getElementById('headerid');
 		if(hder)
-	      h = hder.clientHeight;
+	    {
+   		h = hder.clientHeight;
+		c.height = h*pr;
+		}
         x.clearRect(0,0,w,h)
         q=[{x:0,y:h*.7+f},{x:0,y:h*.7-f}]
         while(q[1].x<w+f) d(q[0], q[1])
