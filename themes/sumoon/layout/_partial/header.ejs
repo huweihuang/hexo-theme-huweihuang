@@ -30,9 +30,9 @@
 	
         <div class="container">
             <div class=" row" >
-			 
+			<% if (theme.ribban_bg) {%>
 			<canvas style="position:absolute;z-index:1;top:0px;left:0px;" width="100%" height="50%"></canvas>
-			
+			<% } %>
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" style="z-index:2;">
                 <% if (is_post()) { %>
                     <div class="post-heading" style="padding:40px">
@@ -49,7 +49,7 @@
                         </span>
                     </div>
                 <% } else { %>
-				<% if (is_home()) { %>
+				<% if (is_home() && theme.slideshow) { %>
 				<!-- slideshow -->
 				<div id="myCarousel" class="carousel slide" data-ride="carousel">
 					<!-- Indicators -->
@@ -111,7 +111,7 @@
         </div>
     </div>
 </header>
-
+<% if (theme.ribban_bg) {%>
 <script>
     document.addEventListener('touchmove', function (e) {
         e.preventDefault()
@@ -164,3 +164,4 @@
     document.ontouchstart = i
     i()
 </script>
+<% } %>

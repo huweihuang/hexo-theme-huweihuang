@@ -5,3 +5,5 @@
 # https://github.com/chriskempson/tomorrow-theme
 # night yilia - https://github.com/litten/hexo-theme-yilia
 highlight_theme: night eighties
+slideshow: false
+ribban_bg: false
