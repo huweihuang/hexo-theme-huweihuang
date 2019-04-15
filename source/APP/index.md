@@ -1,5 +1,4 @@
 ---
-menu: true
 title: APP
 layout: tags
 header-img: img/home-bg.jpg
