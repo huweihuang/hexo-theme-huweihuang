@@ -1,18 +1,13 @@
-> This HuWeihuang theme created by [HuWeihuang](http://www.huweihuang.com/) modified from the original Porter [YuHsuan](https://github.com/YenYuHsuan/hexo-theme-beantech)
+> This Sumoon theme created by [HuWeihuang](http://www.sumoon.com/) foked from huweihuang (https://github.com/huweihuang/hexo-theme-huweihuang)
 > 
-> This theme has been published to the [hexo theme list](https://hexo.io/themes/).
 
 # Live Demo
 
-Hu Weihuang Blog : [www.huweihuang.com](http://www.huweihuang.com/)
+Hu Weihuang Blog : [www.sumoon.com](http://www.sumoon.com/)
 
-![Theme_HuWeihuang](https://res.cloudinary.com/dqxtn0ick/image/upload/v1553666111/blog/blog.jpg)
 
 # Copyright Notice
-
-**You can free to use this theme, but you need to keep the following copyright notice on the website.**
-
-<img src="https://res.cloudinary.com/dqxtn0ick/image/upload/v1537879475/header/copyright.png" width="55%">
+You are free to use this theme, but please leave copyright info in footer.
 
 # Install Hexo
 
@@ -37,8 +32,8 @@ npm install hexo-cli -g
 ## Init
 
 ```bash
-git clone https://github.com/huweihuang/hexo-theme-huweihuang.git ./hexo-huweihuang
-cd hexo-huweihuang
+git clone https://github.com/kinggozhang/hexo-theme-sumoon.git ./hexo-theme-sumoon
+cd hexo-theme-sumoon
 npm install
 ```
 
@@ -79,14 +74,13 @@ signature: true   # show signature
 signature-img: img/signature/<your-signature-ID>
 ```
 ### Go to top icon Setup
-My icon is using iron man, you can change to your own icon at `css/image`.
+you can change to your own icon at `css/image`.
 
 ### Post tag
 You can decide to show post tags or not.
 ```yml
 home_posts_tag: true
 ```
- ![tag](https://raw.githubusercontent.com/huweihuang/hexo-theme-huweihuang/master/source/img/article/tag.png)
 ### Markdown render
 My markdown render engine plugin is [hexo-renderer-markdown-it](https://github.com/celsomiranda/hexo-renderer-markdown-it).
 ```yml
