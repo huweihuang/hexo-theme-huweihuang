@@ -108,9 +108,10 @@
 <!-- Custom Theme JavaScript -->
 <%- js('js/hux-blog.min.js') %>
 
-<%- js('js/particles.js') %>
-<%- js('js/particles_config.js') %>
-
+<% if (theme.particle_bg) {%>
+	<%- js('js/particles.js') %>
+	<%- js('js/particles_config.js') %>
+<% } %>
 <!-- async load function -->
 <script>
     function async(u, c) {
