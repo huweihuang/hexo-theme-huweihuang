@@ -13,7 +13,7 @@ categories:
 - website
 
 ---
-> This Sumoon theme created by [kinggozhang](http://www.sumoon.com/) modified from the original Porter [huweihuang](https://github.com/huweihuang)
+> This Sumoon theme created by [kinggozhang](http://www.sumoon.com/) modified from the original theme [huweihuang](https://github.com/huweihuang/hexo-theme-huweihuang)
 
 # Live Demo
 
