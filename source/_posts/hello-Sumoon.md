@@ -8,6 +8,7 @@ tags:
 - Hexo
 - APP
 - sumoon
+- Sticky
 categories:
 - Hexo
 - website
