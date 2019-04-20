@@ -1,54 +1,75 @@
-> This Sumoon theme created by [kinggozhang](http://www.sumoon.com/) foked from huweihuang (https://github.com/huweihuang/hexo-theme-huweihuang)
-> 
+---
+title: "[Hexo] Hello Theme ACE"
+catalog: true
+toc_nav_num: true
+date: 2019-04-18 10:51:24
+subtitle: "This is hexo theme ACE."
+tags:
+- Hexo
+- APP
+- sumoon
+- Sticky
+categories:
+- Hexo
+- website
 
+---
+> This [ACE theme](https://github.com/kinggozhang/hexo-theme-ace) created by kinggozhang based on theme:huweihuang and many other repos.
+> please check thanks and references for more details.
+
+# New feature
+ 1. Fancy nav bar
+ 2. Support slide show for index page.
+ 3. Remove image bg of header
+ 4. Add ribbon/particle bg to header.
+ 5. Support sticky post.
+ 6. multi lang support
+ 
 # Live Demo
 
-My Blog : [www.sumoon.com](http://www.sumoon.com/)
+Live Demo : [www.sumoon.com](http://www.sumoon.com/)
 
 
 # Copyright Notice
 You are free to use this theme, but please leave copyright info in footer.
+or
+leave friend link of  [ACE-THEME](http://www.sumoon.com/)
 
 # Install Hexo
 
-Install Node.js  and Git
-
-```shell
-#For Mac
-brew install node
-brew install git
-```
-
-Install hexo
-
 ```shell
 npm install hexo-cli -g
-
-#For more:https://hexo.io/zh-cn/index.html
 ```
-
+Access <https://hexo.io> for more info
 # Theme Usage
 
 ## Init
 
 ```bash
-git clone https://github.com/kinggozhang/hexo-theme-sumoon.git ./hexo-theme-sumoon
-cd hexo-theme-sumoon
-npm install
+cd your_blog_dir
+git clone https://github.com/kinggozhang/hexo-theme-ace.git themes/ace
 ```
 
 ## Modify
-Modify `_config.yml` file with your own info.
-Especially the section:
-### Deployment
-Replace to your own repo!
+Change theme with 'ace'
 ```yml
-deploy:
-  type: git
-  repo: https://github.com/<yourAccount>/<repo>
-  branch: <your-branch>
+## Themes: https://hexo.io/themes/
+theme: ace
 ```
-
+Modify `themes/ace/_config.yml` file with your own info.
+Especially the section:
+## header decoration
+```yml
+slideshow: true     //support 3 slides, img/slideshow/slider1/2/3
+ribban_bg: false    //A beatiful ribban bg
+particle_bg: true   //A dynamic particle bg
+```
+## Sticky post
+ You have to specify a sticky tag, then tag it to post.
+```yml
+#sticky post tag
+sticky_tag: "Sticky"
+```
 ### Sidebar settings
 Copy your avatar image to `<root>/img/` and modify the `_config.yml`:
 ```yml
@@ -117,3 +138,9 @@ hexo deploy # hexo will push the static files automatically into the specific br
 # Have fun ^_^ 
 Please <a class="github-button" href="https://github.com/kinggozhang/hexo-theme-sumoon" data-icon="octicon-star" aria-label="Star kinggozhang/hexo-theme-sumoon on GitHub">Star</a> this Project if you like it! <a class="github-button" href="https://github.com/kinggozhang" aria-label="Follow @kinggozhang on GitHub">Follow</a> would also be appreciated!
 Peace!
+# Thanks and references
+ - <https://github.com/huweihuang/hexo-theme-huweihuang>
+ - <https://github.com/YenYuHsuan/hexo-theme-beantech>
+ - <https://github.com/VincentGarreau/particles.js>
+ - <https://blog.csdn.net/fen747042796/article/details/76574058>
+ 
