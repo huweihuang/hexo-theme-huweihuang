@@ -1,59 +1,87 @@
 <!-- Modified by Yu-Hsuan Yen -->
 <!-- Post Header -->
 <style type="text/css">
-    header.intro-header{
-        <% if (is_home()) { %>
-            background-image: url('<%= config["header-img"] %>') 
-            /*config*/
-        <%} else if (is_post()){%>
-            background-image: url('<%= page["header-img"] || config["article-img"]  %>')
-            /*post*/
-        <%} else {%>
-            background-image: url('<%= page["header-img"] || config["archives-img"] %>')
-            /*page*/
-        <%} %>
+    header.intro-header {
+        <% if (is_home()) {
+            %>background-image: url('<%= config["header-img"] %>')
+                /*config*/
+                <%
+        }
+
+        else if (is_post()) {
+            %>background-image: url('<%= page["header-img"] || config["article-img"]  %>')
+                /*post*/
+                <%
+        }
+
+        else {
+            %>background-image: url('<%= page["header-img"] || config["archives-img"] %>')
+                /*page*/
+                <%
+        }
+
+        %>
     }
-    <% if (config.signature) {%>
-    #signature{
-        background-image: url('<%= config.root + config["signature-img"] %>');
+
+    <% if (config.signature) {
+        %>#signature {
+            background-image: url('<%= config.root + config["signature-img"] %>');
+        }
+
+        <%
     }
-    <%}%>
+
+    %>
 </style>
 
-<header class="intro-header" >
+<header class="intro-header">
     <!-- Signature -->
     <div id="signature">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <% if (is_post()) { %>
+                    <% if (is_post()) { %>
                     <div class="post-heading">
                         <div class="tags">
                             <% page.tags.forEach(function(tag){ %>
-                              <a class="tag" href="<%= config.root %>tags/#<%= tag.name %>" title="<%= tag.name %>"><%= tag.name %></a>
+                            <a class="tag" href="<%= config.root %>tags/#<%= tag.name %>" title="<%= tag.name %>">
+                                <%= tag.name %></a>
                             <% }) %>
                         </div>
-                        <h1><%= page.title %></h1>
-                        <h2 class="subheading"><%= page.subtitle || "" %></h2>
-
+                        <h1>
+                            <%= page.title %>
+                        </h1>
+                        <!-- <h2 class="subheading"><%= page.subtitle || "" %></h2> -->
                         <!--文章访问量统计-->
                         <% if(config['busuanzi']) { %>
-                            <span id="busuanzi_container_page_pv">本文已被阅读过<span id="busuanzi_value_page_pv"></span>次</span>
+                        <span id="busuanzi_container_page_pv">本文已被阅读过<span id="busuanzi_value_page_pv"></span>次</span>
                         <% } %>
-                        <!--文章访问量统计-->
-
-                        <span class="meta">
-                            Posted by <%- page.author || config.author %> on
+                        <!--文章访问量统计--> <span class="meta">
+                            Posted by
+                            <%- page.author || config.author %> on
                             <%= page.date.format(config.date_format) %>
                         </span>
                     </div>
-                <% } else { %>
+                    <% } else { %>
                     <div class="site-heading">
-                        <h1><%= page.title || config.title %></h1>
+                        <h1>
+                            <%= page.title || config.title %>
+                        </h1>
                         <!--<hr class="small">-->
-                        <span class="subheading"><%= page.description || config.subtitle || "" %></span>
+
+                        <span id="jrsc">正在加载今日诗词....</span>
+                        <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+                        <script type="text/javascript">
+                            jinrishici.load(function (result) {
+                                // 自己的处理逻辑
+                                console.log(result.data.content, result.data.origin.author, result.data.origin.dynasty);
+                                var string = result.data.content + "  ——" + result.data.origin.dynasty + "·" + result.data.origin.author;
+                                document.getElementById("jrsc").innerHTML = string;
+                            });
+                        </script>
+                        <!-- <span class="subheading"><%= page.description || config.subtitle || "" %></span> -->
                     </div>
-                <% } %>
+                    <% } %>
 
 
                 </div>

@@ -253,3 +253,9 @@ deploy:
   repository: https://github.com/huweihuang/hexo-theme-huweihuang
   branch: gh-pages
   message: Update CNAME
+
+
+# Support for LiveRe comments system.
+# You can get your uid from https://livere.com/insight/myCode (General web site)
+# 换成自己的 来必力uid 即可
+# livere_uid: MTAy4MC80MT4g2NC8xODQxMA==
