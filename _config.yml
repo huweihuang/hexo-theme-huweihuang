@@ -4,7 +4,8 @@
 
 # Site
 title: 日月明 
-subtitle: 编程改变世界
+subtitle: 改变世界||改变自己 
+keywords: HEXO|NODEJS|编程|网站|杂七杂八
 author: JunMing
 language:
 timezone:
@@ -17,82 +18,6 @@ root: /
 permalink: :category/:title/
 permalink_defaults:
   lang: zh-CN
-
-#Custom Setting Start
-
-# Site settings
-SEOTitle: 编程|HEXO|NODEJS|C++|时评
-email: e-mail_address
-description: "字节艺术家的日常"
-keyword: ""
-header-img: /img/header_img/home.jpg
-article-img: /img/article_header/article_bg.jpg
-404-img: /img/header_img/404.png
-signature: false #show signature
-signature-img: img/signature/BeanTechSign-white.png 
-
-
-# SNS settings
-# RSS: false
-# weibo_username:     Demonbaneen
-# zhihu_username:     Demonbane
-github_username:    kinggozhang
-# twitter_username:   Demonbane_x
-# facebook_username:  xxx
-# linkedin_username:  xxx
-
-# Build settings
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
-
-
-# Disqus settings
-#disqus_username: your-disqus-ID
-
-# Duoshuo settings
-# duoshuo_username: kaijun
-# Share component is depend on Comment so we can NOT use share only.
-#duoshuo_share: true                     # set to false if you want to use Comment without Sharing
-
-
-# Analytics settings
-#Baidu Analytics
-ba_track_id: xxx
-# Google Analytics
-ga_track_id: 'UA-XXXXXXXX-X'          # Format: UA-xxxxxx-xx
-ga_domain: yoursite
-
-
-# Sidebar settings
-sidebar: true                       # whether or not using Sidebar.
-sidebar-about-description: "Innovation is KING!"
-sidebar-avatar: /img/avatar/logo.png      # use absolute URL, seeing it's used in both `/` and `/about/`
-widgets:
-- featured-tags
-- short-about
-- recent-posts
-- friends-blog
-- archive
-- category
-
-# widget behavior
-## Archive
-archives-img: /img/header_img/archives-widget.jpg
-archive_type: 'monthly'
-show_count: true
-
-
-## Featured Tags
-featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
-
-
-## Friends
-friends: [
-
-]
-
-
-#Custom Setting End
 
 
 
@@ -203,7 +128,7 @@ alipay: alipay_url
 share: true
 
 ## Themes: https://hexo.io/themes/
-theme: sumoon
+theme: ace 
 
 #sitemap
 sitemap:
