@@ -8,6 +8,14 @@ layout: page
 
     <a href="<%- config.root %><%- post.path %>">
         <h2 class="post-title">
+            <% if (post.top){ %>
+                <i class="fa fa-thumb-tack" style="color:#F4711F" ></i>
+                <!-- <i class="fa fa-thumb-tack" style="color:#F89E8C" ></i> -->
+                <!-- <i class="fa fa-thumb-tack" style="color:#1CB7ED" ></i> -->
+                <font color=#F4711F>置顶</font>
+                <!-- <font color=#F89E8C>置顶</font>  -->
+                <!-- <font color=#1CB7ED>置顶</font>  -->
+            <% } %>                     
             <%- post.title || "Untitled" %>
         </h2>
         <h3 class="post-subtitle">
