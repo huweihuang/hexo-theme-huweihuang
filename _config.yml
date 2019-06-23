@@ -213,6 +213,11 @@ alipay: alipay_url
 # Reference: https://github.com/overtrue/share.js
 share: true
 
+# Reference: https://github.com/YuyingWu/hexo-generator-index-plus
+index_generator_plus:
+  path: ''
+  per_page: 10
+
 ## Themes: https://hexo.io/themes/
 theme: huweihuang
 
