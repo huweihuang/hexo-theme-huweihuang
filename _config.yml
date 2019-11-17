@@ -3,15 +3,15 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 胡伟煌 
-subtitle: 个人博客
-author: 胡伟煌
+title: title
+subtitle: subtitle
+author: author
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://www.huweihuang.com/       # Note: don't forget to modify the CNAME file to your url
+url: your_url       # Note: don't forget to modify the CNAME file to your url
 root: /
 #permalink: :year/:month/:day/:title/
 permalink: :category/:title/
@@ -21,7 +21,7 @@ permalink_defaults:
 #Custom Setting Start
 
 # Site settings
-SEOTitle: 胡伟煌 | Blog
+SEOTitle: SEOTitle
 email: e-mail_address
 description: ""
 keyword: ""
@@ -34,10 +34,10 @@ signature-img: img/signature/BeanTechSign-white.png
 
 # SNS settings
 # RSS: false
-# weibo_username:     Demonbaneen
-# zhihu_username:     Demonbane
-github_username:    huweihuang
-# twitter_username:   Demonbane_x
+# weibo_username:     xxx
+# zhihu_username:     xxx
+# github_username:    xxx
+# twitter_username:   xxx
 # facebook_username:  xxx
 # linkedin_username:  xxx
 
@@ -89,16 +89,8 @@ featured-condition-size: 0              # A tag will be featured if the size of 
 ## Friends
 friends: [
     {
-        title: "CSDN Blog 胡伟煌",
-        href: "http://blog.csdn.net/huwh_"
-    },
-    {
-        title: "DockOne 胡伟煌",
-        href: "http://dockone.io/people/胡伟煌"
-    },
-    {
-        title: "阿里云栖社区 胡伟煌",
-        href: "https://yq.aliyun.com/u/huweihuang"
+        title: "Friends website title",
+        href: "friends url"
     }
 ]
 
@@ -225,12 +217,8 @@ theme: huweihuang
 sitemap:
   path: sitemap.xml
 
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-# repository: https://github.com/huweihuang/xxxxxxx.github.io.git
-# branch: master
-deploy:
-  type: git
-  repository: https://github.com/huweihuang/hexo-theme-huweihuang
-  branch: gh-pages
-  message: Update CNAME
+#deploy:
+#  type: git
+#  repository: yours git repository
+#  branch: gh-pages
+#  message: Commit message
