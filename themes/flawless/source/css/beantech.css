@@ -530,7 +530,6 @@ pre code {
   font-family: 'Lora', 'Times New Roman', serif;
   color: #808080;
   font-size: 16px;
-  font-style: italic;
   margin-top: 0;
 }
 .post-preview > .post-meta > a {
@@ -552,12 +551,11 @@ pre code {
     font-size: 16px;
   }
   .post-preview .post-meta {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 .post-content-preview {
   font-size: 13px;
-  font-style: italic;
   color: #a3a3a3;
 }
 .post-content-preview:hover {
